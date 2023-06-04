@@ -369,8 +369,31 @@ watering = ctrl.ControlSystemSimulation(ctrl_watering)
 # watering.input['soil'] = 2
 # watering.input['stage'] = 1  # 4-1.64
 
+very_little_3_times = ctrl.Rule(
+    (kind['h'] & temp['n'] & (mois['d'] | mois['m']) & soil['a'] & stage['ge']), (water['vl'], times['3'])
+)
+
 # watering.input['kind'] = 1
 # watering.input['temp'] = 40
 # watering.input['mois'] = 25
 # watering.input['soil'] = 1
 # watering.input['stage'] = 1  # 23.14-1.54
+
+# watering.input['kind'] = 0
+# watering.input['temp'] = 24
+# watering.input['mois'] = 78
+# watering.input['soil'] = 2
+# watering.input['stage'] = 1  # 0.58-0.5   17\0.9-1.51
+#
+# watering.input['kind'] = 1
+# watering.input['temp'] = 34
+# watering.input['mois'] = 50
+# watering.input['soil'] = 3
+# watering.input['stage'] = 1  # 12.61-1.6
+
+# watering.input['kind'] = 0
+# watering.input['temp'] = 10
+# watering.input['mois'] = 10
+# watering.input['soil'] = 0
+# watering.input['stage'] = 0
+

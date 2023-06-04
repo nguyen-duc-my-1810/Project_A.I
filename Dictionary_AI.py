@@ -1,6 +1,6 @@
 import random
 
-type_map = {
+kind_map = {
     "Herbaceous": 0,
     "Wood": 1
 }
@@ -112,7 +112,7 @@ CNN_map_content = {
         "3. Growth period:\n", 
         "Some varieties of oranges can take 2 to 4 years for young trees to mature and bear fruit.\n\n", 
         "4. Main harvesting season:\n", 
-        "The main harvesting season for oranges typically occurs during winter and spring, varying depending on the specific type of oranges and geographical region.\n\n", 
+        "The main harvesting season for oranges typically occurs during winter and spring, varying depending on the specific kind of oranges and geographical region.\n\n", 
     ), 
 
     7: (
@@ -149,7 +149,7 @@ CNN_map_content = {
     ),
 }
 
-CNN_map_type = {
+CNN_map_kind = {
     0: "Herbaceous", 
     1: "Wood",
     2: "Herbaceous",
